@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* border: 1px solid black; */
+        }
+
+        td {
+            /* border: 1px solid black; */
+            width: 2px;
+            height: 2px;
+            text-align: center;
+            font-family: monospace;
+            font-size: 1;
+        }
+
+        body {
+        background-color: #63431c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container{
+          margin: 25%;
+      }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="fire_table"></div>
+        <div class="buttons">
+            <button onclick="decreaseFireStrengthness()">-</button>
+            <button onclick="stop()">Stop Fire</button>
+            <button onclick="start()">Start Fire</button>
+            <button onclick="increaseFireStrengthness()">+</button>
+        </div>
+        <div class="buttons">
+            <button class="change_wind" onclick="changeWindDirection()">No Wind</button>
+            <button class="change_debug" onclick="changeDebugMode()">Enable Debug Mode</button>
+        </div>
+    </div>
+</body>
+
+<footer>
+
+    <script src="fire-script.js"></script>
+</footer>
+
+</html>
